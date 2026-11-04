@@ -1,0 +1,19 @@
+{
+  "name": "market-risk-analytics-platform",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Portfolio risk analytics with VaR, Expected Shortfall, Monte Carlo on Cloudflare Workers + Neon DB",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
+  },
+  "dependencies": {
+    "hono": "^4.4.0",
+    "@neondatabase/serverless": "^0.9.0"
+  },
+  "devDependencies": {
+    "wrangler": "^3.62.0",
+    "@cloudflare/workers-types": "^4.20241106.0",
+    "typescript": "^5.4.0"
+  }
+}

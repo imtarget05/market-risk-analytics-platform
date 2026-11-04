@@ -1,0 +1,12 @@
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: market-risk-api-pdb
+  namespace: risk
+  labels:
+    app: market-risk-api
+spec:
+  minAvailable: 1
+  selector:
+    matchLabels:
+      app: market-risk-api

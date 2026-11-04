@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env
+*.log
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+test_risk.db

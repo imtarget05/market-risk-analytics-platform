@@ -1,0 +1,15 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../base
+images:
+  - name: PLACEHOLDER_ACR_LOGIN_SERVER/market-risk-analytics-platform
+    newTag: PLACEHOLDER_COMMIT_SHA
+secretGenerator:
+  - name: market-risk-secrets
+    envs:
+      - prod-secrets.env
+generatorOptions:
+  disableNameSuffixHash: true
+patches:
+  - path: image-patch.yaml
